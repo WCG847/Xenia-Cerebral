@@ -102,3 +102,4 @@ node_modules/.bin/
 /third_party/vasm/
 /tools/shader-playground/*.dll
 /projects/Build/Intermediate/Release Windows
+/projects/Build/Intermediate/Debug Windows
