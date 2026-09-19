@@ -23,7 +23,7 @@ using u8_citer = utfcpp::iterator<std::string_view::const_iterator>;
 
 namespace cvar {
 
-cxxopts::Options options("xenia", "Xbox 360 Emulator");
+cxxopts::Options options("Xenia Cerebral", "Xbox 360 Emulator");
 std::map<std::string, ICommandVar*>* CmdVars;
 std::map<std::string, IConfigVar*>* ConfigVars;
 std::multimap<uint32_t, const IConfigVarUpdate*>* IConfigVarUpdate::updates_;

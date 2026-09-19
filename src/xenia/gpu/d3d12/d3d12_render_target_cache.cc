@@ -2142,7 +2142,7 @@ D3D12RenderTargetCache::GetOrCreateTransferPipelines(TransferShaderKey key) {
   built_shader_.resize(rdef_position_dwords +
                        sizeof(dxbc::RdefHeader) / sizeof(uint32_t));
   // Generator name.
-  dxbc::AppendAlignedString(built_shader_, "Xenia");
+  dxbc::AppendAlignedString(built_shader_, "Xenia Cerebral");
 
   // Constant types - uint (aka "dword" when it's scalar) only.
   // Names.
@@ -5518,7 +5518,7 @@ ID3D12PipelineState* D3D12RenderTargetCache::GetOrCreateDumpPipeline(
   built_shader_.resize(rdef_position_dwords +
                        sizeof(dxbc::RdefHeader) / sizeof(uint32_t));
   // Generator name.
-  dxbc::AppendAlignedString(built_shader_, "Xenia");
+  dxbc::AppendAlignedString(built_shader_, "Xenia Cerebral");
 
   // Constant types - uint (aka "dword" when it's scalar) only.
   // Names.

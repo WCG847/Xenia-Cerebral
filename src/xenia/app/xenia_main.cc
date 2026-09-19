@@ -239,7 +239,7 @@ void EmulatorApp::DebugWindowClosedListener::OnClosing(xe::ui::UIEvent& e) {
 }
 
 EmulatorApp::EmulatorApp(xe::ui::WindowedAppContext& app_context)
-    : xe::ui::WindowedApp(app_context, "xenia", "[Path to .iso/.xex]"),
+    : xe::ui::WindowedApp(app_context, "Xenia Cerebral", "[Path to .iso/.xex]"),
       debug_window_closed_listener_(*this) {
   AddPositionalOption("target");
 }
@@ -419,12 +419,12 @@ bool EmulatorApp::OnInitialize() {
         !std::filesystem::exists(storage_root / "portable.txt")) {
       storage_root = xe::filesystem::GetUserFolder();
 #if defined(XE_PLATFORM_WIN32) || defined(XE_PLATFORM_GNU_LINUX)
-      storage_root = storage_root / "Xenia";
+      storage_root = storage_root / "Xenia Cerebral";
 #else
       // TODO(Triang3l): Point to the app's external storage "files" directory
       // on Android.
 #warning Unhandled platform for the data root.
-      storage_root = storage_root / "Xenia";
+      storage_root = storage_root / "Xenia Cerebral";
 #endif
     }
   }

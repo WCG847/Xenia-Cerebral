@@ -19,6 +19,7 @@
     <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>xenia-app</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'" Label="Configuration">
@@ -55,23 +56,23 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>bin\Windows\Checked\</OutDir>
-    <IntDir>obj\Windows\Checked\Windows\Checked\xenia-app\</IntDir>
-    <TargetName>xenia</TargetName>
+    <OutDir>$(SolutionDir)Build\Output\$(Configuration)\</OutDir>
+    <IntDir>Build\Intermediate\$(Configuration)\</IntDir>
+    <TargetName>Xenia Cerebral</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>bin\Windows\Debug\</OutDir>
-    <IntDir>obj\Windows\Debug\Windows\Debug\xenia-app\</IntDir>
-    <TargetName>xenia</TargetName>
+    <OutDir>$(SolutionDir)Build\Output\$(Configuration)\</OutDir>
+    <IntDir>Build\Intermediate\$(Configuration)\</IntDir>
+    <TargetName>Xenia Cerebral</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>bin\Windows\Release\</OutDir>
-    <IntDir>obj\Windows\Release\Windows\Release\xenia-app\</IntDir>
-    <TargetName>xenia</TargetName>
+    <OutDir>$(SolutionDir)Build\Output\$(Configuration)\</OutDir>
+    <IntDir>Build\Intermediate\$(Configuration)\</IntDir>
+    <TargetName>Xenia Cerebral</TargetName>
     <TargetExt>.exe</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
@@ -102,6 +103,7 @@
       <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
       <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateMapFile>true</GenerateMapFile>
     </Link>
     <Manifest>
       <AdditionalManifestFiles>../src/xenia/base/app_win32.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
@@ -135,6 +137,7 @@
       <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
       <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateMapFile>true</GenerateMapFile>
     </Link>
     <Manifest>
       <AdditionalManifestFiles>../src/xenia/base/app_win32.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
@@ -168,12 +171,13 @@
     </ResourceCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
       <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+      <GenerateMapFile>true</GenerateMapFile>
     </Link>
     <Manifest>
       <AdditionalManifestFiles>../src/xenia/base/app_win32.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>

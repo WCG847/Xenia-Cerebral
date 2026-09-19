@@ -2193,7 +2193,7 @@ void DxbcShaderTranslator::WriteResourceDefinition() {
   shader_object_.resize(shader_object_.size() +
                         sizeof(dxbc::RdefHeader) / sizeof(uint32_t));
   // Generator name.
-  dxbc::AppendAlignedString(shader_object_, "Xenia");
+  dxbc::AppendAlignedString(shader_object_, "Xenia Cerebral");
 
   // ***************************************************************************
   // Constant types
