@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{0F45D591-7B24-542D-843C-DF03F09ABA8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\bytecode">
+      <UniqueIdentifier>{4D9D76D3-3996-9525-62C8-7AAA4E207531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\bytecode\vulkan_spirv">
+      <UniqueIdentifier>{003AC871-6C52-AF9B-35FF-3E35A1D64335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vulkan">
+      <UniqueIdentifier>{F6FEA123-E2A0-CCF9-CB5B-E04DB79C534A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vulkan\functions">
+      <UniqueIdentifier>{FE064D28-EAFF-6B7A-1332-51FFFF894B86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_bilinear_dither_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_bilinear_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_ffx_cas_resample_dither_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_ffx_cas_resample_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_ffx_cas_sharpen_dither_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_ffx_cas_sharpen_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_ffx_fsr_easu_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_ffx_fsr_rcas_dither_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_ffx_fsr_rcas_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\guest_output_triangle_strip_rect_vs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\immediate_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\shaders\bytecode\vulkan_spirv\immediate_vs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\linked_type_descriptor_set_allocator.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\single_layout_descriptor_set_pool.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\spirv_tools_context.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\ui_samplers.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_api.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_device.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_gpu_completion_timeline.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_immediate_drawer.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_instance.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_mem_alloc.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_presenter.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_provider.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_upload_buffer_pool.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\ui\vulkan\vulkan_util.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\ui\vulkan\linked_type_descriptor_set_allocator.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\single_layout_descriptor_set_pool.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\spirv_tools_context.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\ui_samplers.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_device.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_gpu_completion_timeline.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_immediate_drawer.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_instance.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_mem_alloc.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_presenter.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_provider.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_upload_buffer_pool.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_util.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_window_demo.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\ui\vulkan\functions\device_1_0.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\device_1_1_khr_bind_memory2.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\device_1_1_khr_get_memory_requirements2.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\device_1_3_khr_maintenance4.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\device_khr_swapchain.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\instance_1_0.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\instance_1_1_khr_get_physical_device_properties2.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\instance_ext_debug_utils.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\instance_khr_android_surface.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\instance_khr_surface.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\instance_khr_win32_surface.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+    <None Include="..\src\xenia\ui\vulkan\functions\instance_khr_xcb_surface.inc">
+      <Filter>vulkan\functions</Filter>
+    </None>
+  </ItemGroup>
+</Project>

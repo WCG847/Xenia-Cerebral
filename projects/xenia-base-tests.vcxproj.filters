@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xenia">
+      <UniqueIdentifier>{11CF70B6-7D39-252D-C677-D6D232210382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xenia\base">
+      <UniqueIdentifier>{5BCA7B43-4798-6F49-302C-E06F1C994BAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xenia\base\testing">
+      <UniqueIdentifier>{C804575D-B4FE-7FAF-9D6B-16C08904E61B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{36DF7010-A2F3-98C1-6B75-3C21D74895F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\build">
+      <UniqueIdentifier>{F5BBF650-6171-6F46-EA65-691D561A664A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\build\src">
+      <UniqueIdentifier>{8C6C4925-F8F7-B6E9-0109-3ADE6D1313EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\base\console_app_main_win.cc">
+      <Filter>src\xenia\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\base\testing\chrono_test.cc">
+      <Filter>src\xenia\base\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\base\testing\memory_test.cc">
+      <Filter>src\xenia\base\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\base\testing\threading_test.cc">
+      <Filter>src\xenia\base\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\base\testing\utf8_test.cc">
+      <Filter>src\xenia\base\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tools\build\src\test_suite_main.cc">
+      <Filter>tools\build\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\base\app_win32.manifest">
+      <Filter>src\xenia\base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

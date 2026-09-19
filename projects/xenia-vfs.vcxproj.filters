@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="devices">
+      <UniqueIdentifier>{28F2AA09-94D1-29A5-9DE9-B47B09489006}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xenia\vfs\device.h" />
+    <ClInclude Include="..\src\xenia\vfs\devices\disc_image_device.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\disc_image_entry.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\disc_image_file.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\host_path_device.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\host_path_entry.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\host_path_file.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\null_device.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\null_entry.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\null_file.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\stfs_container_device.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\stfs_container_entry.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\stfs_container_file.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\devices\stfs_xbox.h">
+      <Filter>devices</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\vfs\entry.h" />
+    <ClInclude Include="..\src\xenia\vfs\file.h" />
+    <ClInclude Include="..\src\xenia\vfs\virtual_file_system.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\vfs\device.cc" />
+    <ClCompile Include="..\src\xenia\vfs\devices\disc_image_device.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\disc_image_entry.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\disc_image_file.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\host_path_device.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\host_path_entry.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\host_path_file.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\null_device.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\null_entry.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\null_file.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\stfs_container_device.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\stfs_container_entry.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\devices\stfs_container_file.cc">
+      <Filter>devices</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\vfs\entry.cc" />
+    <ClCompile Include="..\src\xenia\vfs\virtual_file_system.cc" />
+  </ItemGroup>
+</Project>

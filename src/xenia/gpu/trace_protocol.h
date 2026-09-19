@@ -23,7 +23,7 @@ static const char kTraceExtension[] = "xtr";
 // Other changes besides the file format may require bumps, such as
 // anything that changes what is recorded into the files (new GPU
 // command processor commands, etc).
-constexpr uint32_t kTraceFormatVersion = 1;
+constexpr uint32_t kTraceFormatVersion = 2;
 
 // Trace file header identifying information about the trace.
 // This must be positioned at the start of the file and must only occur once.
@@ -31,9 +31,6 @@ struct TraceHeader {
   // Must be the first 4 bytes of the file.
   // Set to kTraceFormatVersion.
   uint32_t version;
-
-  // SHA1 of the commit used to record the trace.
-  char build_commit_sha[40];
 
   // Title ID of game that was being recorded.
   // May be 0 if not generated from a game or the ID could not be retrieved.

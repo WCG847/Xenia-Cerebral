@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{8078947C-6CAF-950D-159C-7B1001B2110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{C3795900-AF05-880B-18B4-880B045F880B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui\vulkan">
+      <UniqueIdentifier>{03A2B053-6F0C-65CA-B84A-167024F4421F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\ui\vulkan\vulkan_window_demo.cc">
+      <Filter>ui\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\window_demo.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\windowed_app_main_win.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\base\app_win32.manifest">
+      <Filter>base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

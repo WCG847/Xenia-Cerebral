@@ -15,7 +15,6 @@
 #include "third_party/snappy/snappy-sinksource.h"
 #include "third_party/snappy/snappy.h"
 
-#include "build/version.h"
 #include "xenia/base/assert.h"
 #include "xenia/base/filesystem.h"
 #include "xenia/base/logging.h"
@@ -48,8 +47,7 @@ bool TraceWriter::Open(const std::filesystem::path& path, uint32_t title_id) {
   // Write header first. Must be at the top of the file.
   TraceHeader header;
   header.version = kTraceFormatVersion;
-  std::memcpy(header.build_commit_sha, XE_BUILD_COMMIT,
-              sizeof(header.build_commit_sha));
+
   header.title_id = title_id;
   fwrite(&header, sizeof(header), 1, file_);
 

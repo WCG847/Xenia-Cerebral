@@ -57,9 +57,6 @@ bool TraceReader::Open(const std::string_view path) {
 
   XELOGI("Mapped {}b trace from {}", trace_size_, xe::path_to_utf8(path));
   XELOGI("   Version: {}", header->version);
-  auto commit_str = std::string(header->build_commit_sha,
-                                xe::countof(header->build_commit_sha));
-  XELOGI("    Commit: {}", commit_str);
   XELOGI("  Title ID: {}", header->title_id);
 
   ParseTrace();

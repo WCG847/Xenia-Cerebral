@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="x86">
+      <UniqueIdentifier>{CBB8880B-37C2-887C-C03D-9F7C2C46947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\adler32.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\aes.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\aes_ctr.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\attributes.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\audio_fifo.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\avassert.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\avconfig.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\avstring.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\avutil.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\base64.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\blowfish.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\bprint.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\bswap.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\buffer.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\camellia.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\cast5.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\channel_layout.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\common.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\cpu.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\crc.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\des.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\dict.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\display.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\dovi_meta.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\downmix_info.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\encryption_info.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\error.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\eval.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\ffversion.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\fifo.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\file.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\film_grain_params.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\frame.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hash.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hdr_dynamic_metadata.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hmac.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_cuda.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_d3d11va.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_drm.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_dxva2.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_mediacodec.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_opencl.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_qsv.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_vaapi.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_vdpau.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_videotoolbox.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\hwcontext_vulkan.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\imgutils.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\intfloat.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\intmath.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\intreadwrite.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\lfg.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\log.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\macros.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\mastering_display_metadata.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\mathematics.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\md5.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\mem.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\motion_vector.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\murmur3.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\opt.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\parseutils.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\pixdesc.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\pixelutils.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\pixfmt.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\random_seed.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\rational.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\rc4.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\replaygain.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\ripemd.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\samplefmt.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\sha.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\sha512.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\spherical.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\stereo3d.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\tea.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\threadmessage.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\time.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\timecode.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\timer.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\timestamp.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\tree.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\twofish.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\tx.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\version.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\video_enc_params.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavutil\xtea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\adler32.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\aes.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\aes_ctr.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\audio_fifo.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\avsscanf.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\avstring.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\base64.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\blowfish.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\bprint.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\buffer.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\camellia.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\cast5.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\channel_layout.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\color_utils.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\cpu.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\crc.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\des.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\dict.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\display.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\dovi_meta.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\downmix_info.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\encryption_info.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\error.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\eval.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\fifo.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\file.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\file_open.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\film_grain_params.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\fixed_dsp.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\float_dsp.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\frame.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\hash.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\hdr_dynamic_metadata.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\hmac.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\hwcontext.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\imgutils.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\integer.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\intmath.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\lfg.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\lls.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\log.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\log2_tab.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\mastering_display_metadata.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\mathematics.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\md5.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\mem.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\murmur3.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\opt.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\parseutils.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\pixdesc.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\pixelutils.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\random_seed.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\rational.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\rc4.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\reverse.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\ripemd.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\samplefmt.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\sha.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\sha512.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\slicethread.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\spherical.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\stereo3d.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\tea.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\threadmessage.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\time.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\timecode.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\tree.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\twofish.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\tx.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\tx_double.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\tx_float.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\tx_int32.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\utils.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\video_enc_params.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\x86\cpu.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\x86\fixed_dsp_init.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\x86\float_dsp_init.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\x86\imgutils_init.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\x86\lls_init.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\xga_font_data.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavutil\xtea.c" />
+  </ItemGroup>
+</Project>

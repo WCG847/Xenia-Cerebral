@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xenia">
+      <UniqueIdentifier>{11CF70B6-7D39-252D-C677-D6D232210382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xenia\base">
+      <UniqueIdentifier>{5BCA7B43-4798-6F49-302C-E06F1C994BAE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xenia\cpu">
+      <UniqueIdentifier>{68698F11-D429-0B48-9D64-54C509E44F24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\xenia\cpu\testing">
+      <UniqueIdentifier>{D560EBC2-41CD-A6BD-0AC1-3E1B76ECC825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{36DF7010-A2F3-98C1-6B75-3C21D74895F2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\build">
+      <UniqueIdentifier>{F5BBF650-6171-6F46-EA65-691D561A664A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\build\src">
+      <UniqueIdentifier>{8C6C4925-F8F7-B6E9-0109-3ADE6D1313EA}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\base\console_app_main_win.cc">
+      <Filter>src\xenia\base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\add_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\byte_swap_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\extract_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\insert_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\load_vector_shl_shr_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\pack_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\permute_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\sha_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\shl_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\shr_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\swizzle_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\unpack_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\vector_add_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\vector_max_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\vector_min_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\vector_rotate_left_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\vector_sha_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\vector_shl_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\testing\vector_shr_test.cc">
+      <Filter>src\xenia\cpu\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\tools\build\src\test_suite_main.cc">
+      <Filter>tools\build\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\base\app_win32.manifest">
+      <Filter>src\xenia\base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

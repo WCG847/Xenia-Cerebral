@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{0F45D591-7B24-542D-843C-DF03F09ABA8E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\bytecode">
+      <UniqueIdentifier>{4D9D76D3-3996-9525-62C8-7AAA4E207531}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders\bytecode\vulkan_spirv">
+      <UniqueIdentifier>{003AC871-6C52-AF9B-35FF-3E35A1D64335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vulkan">
+      <UniqueIdentifier>{F6FEA123-E2A0-CCF9-CB5B-E04DB79C534A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_pwl_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_pwl_fxaa_luma_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_pwl_fxaa_luma_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_pwl_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_table_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_table_fxaa_luma_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_table_fxaa_luma_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\apply_gamma_table_ps.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\fullscreen_cw_vs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\host_depth_store_1xmsaa_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\host_depth_store_2xmsaa_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\host_depth_store_4xmsaa_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\passthrough_position_xy_vs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_clear_32bpp_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_clear_32bpp_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_clear_64bpp_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_clear_64bpp_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_32bpp_1x2xmsaa_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_32bpp_1x2xmsaa_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_32bpp_4xmsaa_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_32bpp_4xmsaa_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_64bpp_1x2xmsaa_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_64bpp_1x2xmsaa_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_64bpp_4xmsaa_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_fast_64bpp_4xmsaa_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_128bpp_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_128bpp_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_16bpp_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_16bpp_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_32bpp_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_32bpp_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_64bpp_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_64bpp_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_8bpp_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\resolve_full_8bpp_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_128bpb_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_128bpb_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_16bpb_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_16bpb_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_32bpb_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_32bpb_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_64bpb_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_64bpb_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_8bpb_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_8bpb_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_bgrg8_rgb8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_bgrg8_rgbg8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_ctx1_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_depth_float_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_depth_float_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_depth_unorm_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_depth_unorm_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxn_rg8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxt1_rgba8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxt3_rgba8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxt3a_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxt3aas1111_argb4_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxt3aas1111_bgra4_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxt5_rgba8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_dxt5a_r8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_gbgr8_grgb8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_gbgr8_rgb8_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r10g11b11_rgba16_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r10g11b11_rgba16_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r10g11b11_rgba16_snorm_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r10g11b11_rgba16_snorm_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r11g11b10_rgba16_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r11g11b10_rgba16_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r11g11b10_rgba16_snorm_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r11g11b10_rgba16_snorm_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r16_snorm_float_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r16_snorm_float_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r16_unorm_float_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r16_unorm_float_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r4g4b4a4_a4r4g4b4_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r4g4b4a4_a4r4g4b4_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r4g4b4a4_b4g4r4a4_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r4g4b4a4_b4g4r4a4_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r5g5b5a1_b5g5r5a1_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r5g5b5a1_b5g5r5a1_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r5g5b6_b5g6r5_swizzle_rbga_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r5g5b6_b5g6r5_swizzle_rbga_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r5g6b5_b5g6r5_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_r5g6b5_b5g6r5_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rg16_snorm_float_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rg16_snorm_float_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rg16_unorm_float_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rg16_unorm_float_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rgba16_snorm_float_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rgba16_snorm_float_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rgba16_unorm_float_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\shaders\bytecode\vulkan_spirv\texture_load_rgba16_unorm_float_scaled_cs.h">
+      <Filter>shaders\bytecode\vulkan_spirv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\deferred_command_buffer.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_command_processor.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_graphics_system.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_pipeline_cache.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_primitive_processor.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_render_target_cache.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_shader.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_shared_memory.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\gpu\vulkan\vulkan_texture_cache.h">
+      <Filter>vulkan</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\deferred_command_buffer.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_command_processor.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_graphics_system.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_pipeline_cache.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_primitive_processor.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_render_target_cache.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_shader.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_shared_memory.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_texture_cache.cc">
+      <Filter>vulkan</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

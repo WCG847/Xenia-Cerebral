@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{8078947C-6CAF-950D-159C-7B1001B2110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gpu">
+      <UniqueIdentifier>{F177880B-5D81-887C-E6FC-9E7C5205947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\base\console_app_main_win.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\gpu\shader_compiler_main.cc">
+      <Filter>gpu</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\base\app_win32.manifest">
+      <Filter>base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

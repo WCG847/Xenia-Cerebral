@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Checked Windows|x64">
+      <Configuration>Checked Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Windows|x64">
+      <Configuration>Debug Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Windows|x64">
+      <Configuration>Release Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE185C4A-1C4F-4503-9892-328E549E871A}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xenia-kernel</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <OutDir>bin\Windows\Checked\</OutDir>
+    <IntDir>obj\Windows\Checked\Windows\Checked\xenia-kernel\</IntDir>
+    <TargetName>xenia-kernel</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <OutDir>bin\Windows\Debug\</OutDir>
+    <IntDir>obj\Windows\Debug\Windows\Debug\xenia-kernel\</IntDir>
+    <TargetName>xenia-kernel</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <OutDir>bin\Windows\Release\</OutDir>
+    <IntDir>obj\Windows\Release\Windows\Release\xenia-kernel\</IntDir>
+    <TargetName>xenia-kernel</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_LIB;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/RTCsu /utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_LIB;DEBUG;_NO_DEBUG_HEAP=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_LIB;NDEBUG;_NO_DEBUG_HEAP=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xenia\kernel\info\file.h" />
+    <ClInclude Include="..\src\xenia\kernel\info\volume.h" />
+    <ClInclude Include="..\src\xenia\kernel\kernel_flags.h" />
+    <ClInclude Include="..\src\xenia\kernel\kernel_module.h" />
+    <ClInclude Include="..\src\xenia\kernel\kernel_state.h" />
+    <ClInclude Include="..\src\xenia\kernel\user_module.h" />
+    <ClInclude Include="..\src\xenia\kernel\util\gameinfo_utils.h" />
+    <ClInclude Include="..\src\xenia\kernel\util\native_list.h" />
+    <ClInclude Include="..\src\xenia\kernel\util\object_table.h" />
+    <ClInclude Include="..\src\xenia\kernel\util\shim_utils.h" />
+    <ClInclude Include="..\src\xenia\kernel\util\xdbf_utils.h" />
+    <ClInclude Include="..\src\xenia\kernel\util\xex2_info.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\app_manager.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xam_app.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xgi_app.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xlivebase_app.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xmp_app.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\content_manager.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\user_profile.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_content_device.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_module.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_ordinals.h" />
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_private.h" />
+    <ClInclude Include="..\src\xenia\kernel\xbdm\xbdm_module.h" />
+    <ClInclude Include="..\src\xenia\kernel\xbdm\xbdm_ordinals.h" />
+    <ClInclude Include="..\src\xenia\kernel\xbdm\xbdm_private.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\cert_monitor.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\debug_monitor.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_error.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_module.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_ordinals.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_private.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_rtl.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_threading.h" />
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_video.h" />
+    <ClInclude Include="..\src\xenia\kernel\xenumerator.h" />
+    <ClInclude Include="..\src\xenia\kernel\xevent.h" />
+    <ClInclude Include="..\src\xenia\kernel\xfile.h" />
+    <ClInclude Include="..\src\xenia\kernel\xiocompletion.h" />
+    <ClInclude Include="..\src\xenia\kernel\xmodule.h" />
+    <ClInclude Include="..\src\xenia\kernel\xmutant.h" />
+    <ClInclude Include="..\src\xenia\kernel\xnotifylistener.h" />
+    <ClInclude Include="..\src\xenia\kernel\xobject.h" />
+    <ClInclude Include="..\src\xenia\kernel\xsemaphore.h" />
+    <ClInclude Include="..\src\xenia\kernel\xsocket.h" />
+    <ClInclude Include="..\src\xenia\kernel\xsymboliclink.h" />
+    <ClInclude Include="..\src\xenia\kernel\xthread.h" />
+    <ClInclude Include="..\src\xenia\kernel\xtimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\kernel\kernel_flags.cc" />
+    <ClCompile Include="..\src\xenia\kernel\kernel_module.cc" />
+    <ClCompile Include="..\src\xenia\kernel\kernel_state.cc" />
+    <ClCompile Include="..\src\xenia\kernel\user_module.cc" />
+    <ClCompile Include="..\src\xenia\kernel\util\gameinfo_utils.cc" />
+    <ClCompile Include="..\src\xenia\kernel\util\native_list.cc" />
+    <ClCompile Include="..\src\xenia\kernel\util\object_table.cc" />
+    <ClCompile Include="..\src\xenia\kernel\util\shim_utils.cc" />
+    <ClCompile Include="..\src\xenia\kernel\util\xdbf_utils.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\app_manager.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xam_app.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xgi_app.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xlivebase_app.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xmp_app.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\content_manager.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\user_profile.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_avatar.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_content.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_content_aggregate.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_content_device.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_enum.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_info.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_input.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_locale.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_module.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_msg.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_net.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_notify.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_nui.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_party.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_task.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_ui.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_user.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_video.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_voice.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xbdm\xbdm_misc.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xbdm\xbdm_module.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\cert_monitor.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\debug_monitor.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_audio.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_audio_xma.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_crypt.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_debug.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_error.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_hal.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_hid.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_io.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_io_info.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_memory.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_misc.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_module.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_modules.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_ob.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_rtl.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_strings.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_threading.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_usbcam.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_video.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_xconfig.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xenumerator.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xevent.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xfile.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xiocompletion.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xmodule.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xmutant.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xnotifylistener.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xobject.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xsemaphore.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xsocket.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xsymboliclink.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xthread.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xtimer.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\kernel\util\export_table_post.inc" />
+    <None Include="..\src\xenia\kernel\util\export_table_pre.inc" />
+    <None Include="..\src\xenia\kernel\util\ordinal_table_post.inc" />
+    <None Include="..\src\xenia\kernel\util\ordinal_table_pre.inc" />
+    <None Include="..\src\xenia\kernel\xam\xam_module_export_groups.inc" />
+    <None Include="..\src\xenia\kernel\xam\xam_table.inc" />
+    <None Include="..\src\xenia\kernel\xbdm\xbdm_module_export_groups.inc" />
+    <None Include="..\src\xenia\kernel\xbdm\xbdm_table.inc" />
+    <None Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_module_export_groups.inc" />
+    <None Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_table.inc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="..\src\xenia\kernel\debug_visualizers.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="aes_128.vcxproj">
+      <Project>{B50458BF-DD83-4C1A-8CAD-61F5FBBFD720}</Project>
+    </ProjectReference>
+    <ProjectReference Include="fmt.vcxproj">
+      <Project>{B9FF4B2C-B438-42A9-971E-E0C19A711A13}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-apu.vcxproj">
+      <Project>{F4DF01F0-50E4-4C67-8F54-61660696CC79}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-base.vcxproj">
+      <Project>{AEADAF22-2B20-4941-B05F-A802D5679C11}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-cpu.vcxproj">
+      <Project>{0109C91E-5A04-41AB-9168-0D5187D11298}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-hid.vcxproj">
+      <Project>{88A4EF38-C550-430F-8C22-8DED4E4EF601}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-vfs.vcxproj">
+      <Project>{395C8ABD-4DC9-46ED-AF7A-C2B9B68A3A98}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

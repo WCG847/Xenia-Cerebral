@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{8078947C-6CAF-950D-159C-7B1001B2110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpu">
+      <UniqueIdentifier>{ED66880B-5970-887C-E2EB-9E7C4EF4937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpu\ppc">
+      <UniqueIdentifier>{7FC627D6-EBA5-A671-F4BD-3148601C0DD3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpu\ppc\testing">
+      <UniqueIdentifier>{ECE4BE4B-5870-2C10-6181-AF04CD8B8810}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\base\console_app_main_win.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_add.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_addc.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_adde.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_addic.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_addis.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_addme.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_addze.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_and.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_andc.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_andi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_andis.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_cmp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_cmpi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_cmpl.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_cmpli.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_cntlzd.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_cntlzw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_divd.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_divdu.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_divw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_divwu.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_eqv.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_extsb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_extsh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_extsw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fabs.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fadd.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fctixz.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fmadd.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fmadds.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fmul.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fnabs.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_frsqrte.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fsel.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_fsqrt.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_lvexx.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_lvl.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_lvr.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_lvsl.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_lvsr.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_mulhd.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_mulhdu.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_mulhw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_mulhwu.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_mulld.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_mulli.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_mullw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_neg.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_nor.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_ori.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_rldicl.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_rldicr.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_rlwimi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_rlwinm.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_rlwnm.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_sld.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_slw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_srad.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_sradi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_sraw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_srawi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_srd.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_srw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_stvew.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_stvl.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_stvr.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_subf.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_subfc.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_subfe.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_subfic.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_subfme.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_subfze.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_td.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_tdi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_tw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_twi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vaddfp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vaddfp128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vaddshs.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vadduhm.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vand.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vand128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vandc.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vandc128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vavgsh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vavguh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vcfsx.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vcmpxxfp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vcmpxxfp128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vctsxs.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vctuxs.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vexptefp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmaddfp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmaxfp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmaxfp128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmaxsh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmaxuh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vminfp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vminfp128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vminsh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vminuh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmrghb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmrghh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmrghw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmrglb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmrglh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmrglw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmsum3fp128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vmsum4fp128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vor.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vor128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vperm.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpermwi128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkd3d128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkpx.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkshss.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkshss128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkshus.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkshus128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkswss.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkswss128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkswus.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkswus128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuhum.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuhum128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuhus.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuhus128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuwum.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuwum128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuwus.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vpkuwus128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vrfin.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vrlh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vrlimi128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsel.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsl.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vslb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsldoi.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vslh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vslo.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vslw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vspltb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsplth.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vspltisb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vspltish.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vspltisw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vspltw.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsr.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsrah.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsrh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsro.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsubfp.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsubfp128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsubshs.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vsubuhm.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vupkd3d128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vupkhsb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vupkhsb128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vupkhsh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vupklsb.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vupklsb128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vupklsh.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vxor.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\instr_vxor128.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\ppc_testing_main.cc">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\ppc_testing_native_thunks.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\seq_branch_carry.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\cpu\ppc\testing\seq_jumptable_constants.s">
+      <Filter>cpu\ppc\testing</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\base\app_win32.manifest">
+      <Filter>base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

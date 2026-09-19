@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Checked Windows|x64">
+      <Configuration>Checked Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Windows|x64">
+      <Configuration>Debug Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Windows|x64">
+      <Configuration>Release Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86A1DDDC-A26A-4885-8C55-CF745225D93E}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xenia-gpu-vulkan-trace-viewer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Windows\Checked\</OutDir>
+    <IntDir>obj\Windows\Checked\Windows\Checked\xenia-gpu-vulkan-trace-viewer\</IntDir>
+    <TargetName>xenia-gpu-vulkan-trace-viewer</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>bin\Windows\Debug\</OutDir>
+    <IntDir>obj\Windows\Debug\Windows\Debug\xenia-gpu-vulkan-trace-viewer\</IntDir>
+    <TargetName>xenia-gpu-vulkan-trace-viewer</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>bin\Windows\Release\</OutDir>
+    <IntDir>obj\Windows\Release\Windows\Release\xenia-gpu-vulkan-trace-viewer\</IntDir>
+    <TargetName>xenia-gpu-vulkan-trace-viewer</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;..\third_party\Vulkan-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/RTCsu /utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>../src/xenia/base/app_win32.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;DEBUG;_NO_DEBUG_HEAP=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;..\third_party\Vulkan-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>../src/xenia/base/app_win32.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;NDEBUG;_NO_DEBUG_HEAP=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;..\third_party\Vulkan-Headers\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Manifest>
+      <AdditionalManifestFiles>../src/xenia/base/app_win32.manifest;%(AdditionalManifestFiles)</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\gpu\vulkan\vulkan_trace_viewer_main.cc" />
+    <ClCompile Include="..\src\xenia\ui\windowed_app_main_win.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\base\app_win32.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="xenia-apu.vcxproj">
+      <Project>{F4DF01F0-50E4-4C67-8F54-61660696CC79}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-apu-nop.vcxproj">
+      <Project>{F37DBF3A-D200-4CC0-83F0-F801B1BDD862}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-base.vcxproj">
+      <Project>{AEADAF22-2B20-4941-B05F-A802D5679C11}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-core.vcxproj">
+      <Project>{970F7892-F19A-4BF5-8795-478C51757BEC}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-cpu.vcxproj">
+      <Project>{0109C91E-5A04-41AB-9168-0D5187D11298}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-gpu.vcxproj">
+      <Project>{0E8D3370-E4B1-4B05-A2E8-39EBBCDF9B17}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-gpu-vulkan.vcxproj">
+      <Project>{717590B4-F579-4162-8F23-0624E87D6CCA}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-hid.vcxproj">
+      <Project>{88A4EF38-C550-430F-8C22-8DED4E4EF601}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-hid-nop.vcxproj">
+      <Project>{887B6F26-B0C1-43C1-A013-A37E7B9634FD}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-kernel.vcxproj">
+      <Project>{AE185C4A-1C4F-4503-9892-328E549E871A}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-ui.vcxproj">
+      <Project>{D0407C25-B0EA-40DC-846C-82C46FBD9FA2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-ui-vulkan.vcxproj">
+      <Project>{4933D81E-1C2C-4D5D-B104-3C0EB9DC2F00}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-vfs.vcxproj">
+      <Project>{395C8ABD-4DC9-46ED-AF7A-C2B9B68A3A98}</Project>
+    </ProjectReference>
+    <ProjectReference Include="aes_128.vcxproj">
+      <Project>{B50458BF-DD83-4C1A-8CAD-61F5FBBFD720}</Project>
+    </ProjectReference>
+    <ProjectReference Include="capstone.vcxproj">
+      <Project>{B3A89F7E-BB02-4945-AE75-219CAED6AFA2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="fmt.vcxproj">
+      <Project>{B9FF4B2C-B438-42A9-971E-E0C19A711A13}</Project>
+    </ProjectReference>
+    <ProjectReference Include="glslang-spirv.vcxproj">
+      <Project>{1CC8F45E-91E2-4DAF-A55E-666BF8B5E6B2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="imgui.vcxproj">
+      <Project>{ED9271C4-B0A1-42EF-8403-067B11BF49D0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libavcodec.vcxproj">
+      <Project>{9DB2830C-D326-48ED-B4CC-08EA6A1B7272}</Project>
+    </ProjectReference>
+    <ProjectReference Include="libavutil.vcxproj">
+      <Project>{19216035-F781-4F15-B009-213B7E3A18AC}</Project>
+    </ProjectReference>
+    <ProjectReference Include="mspack.vcxproj">
+      <Project>{0881692A-75A1-4E7B-87D8-BB9108CEDEA4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="snappy.vcxproj">
+      <Project>{BB143D61-3FD4-44C2-8B7E-04CC538BA2C7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xxhash.vcxproj">
+      <Project>{40D4CE21-5448-4399-9F98-589B7E1C23B1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="xenia-cpu-backend-x64.vcxproj">
+      <Project>{7D8D5DCE-4696-4197-952A-09506F725AFE}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

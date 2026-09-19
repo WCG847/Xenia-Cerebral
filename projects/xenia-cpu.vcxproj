@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Checked Windows|x64">
+      <Configuration>Checked Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug Windows|x64">
+      <Configuration>Debug Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release Windows|x64">
+      <Configuration>Release Windows</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0109C91E-5A04-41AB-9168-0D5187D11298}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>xenia-cpu</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <OutDir>bin\Windows\Checked\</OutDir>
+    <IntDir>obj\Windows\Checked\Windows\Checked\xenia-cpu\</IntDir>
+    <TargetName>xenia-cpu</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <OutDir>bin\Windows\Debug\</OutDir>
+    <IntDir>obj\Windows\Debug\Windows\Debug\xenia-cpu\</IntDir>
+    <TargetName>xenia-cpu</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <OutDir>bin\Windows\Release\</OutDir>
+    <IntDir>obj\Windows\Release\Windows\Release\xenia-cpu\</IntDir>
+    <TargetName>xenia-cpu</TargetName>
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_LIB;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;..\third_party\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/RTCsu /utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_LIB;DEBUG;_NO_DEBUG_HEAP=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;..\third_party\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <PreprocessorDefinitions>_UNICODE;UNICODE;_LIB;NDEBUG;_NO_DEBUG_HEAP=1;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..;..\src;..\third_party;..\third_party\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalOptions>/utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <TreatLibWarningAsErrors>true</TreatLibWarningAsErrors>
+      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xenia\cpu\backend\assembler.h" />
+    <ClInclude Include="..\src\xenia\cpu\backend\backend.h" />
+    <ClInclude Include="..\src\xenia\cpu\backend\code_cache.h" />
+    <ClInclude Include="..\src\xenia\cpu\backend\machine_info.h" />
+    <ClInclude Include="..\src\xenia\cpu\backend\null_backend.h" />
+    <ClInclude Include="..\src\xenia\cpu\breakpoint.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\compiler.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\compiler_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\compiler_passes.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\conditional_group_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\conditional_group_subpass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\constant_propagation_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\context_promotion_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\control_flow_analysis_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\control_flow_simplification_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\data_flow_analysis_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\dead_code_elimination_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\finalization_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\memory_sequence_combination_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\register_allocation_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\simplification_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\validation_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\compiler\passes\value_reduction_pass.h" />
+    <ClInclude Include="..\src\xenia\cpu\cpu_flags.h" />
+    <ClInclude Include="..\src\xenia\cpu\debug_listener.h" />
+    <ClInclude Include="..\src\xenia\cpu\elf_module.h" />
+    <ClInclude Include="..\src\xenia\cpu\entry_table.h" />
+    <ClInclude Include="..\src\xenia\cpu\export_resolver.h" />
+    <ClInclude Include="..\src\xenia\cpu\function.h" />
+    <ClInclude Include="..\src\xenia\cpu\function_debug_info.h" />
+    <ClInclude Include="..\src\xenia\cpu\function_trace_data.h" />
+    <ClInclude Include="..\src\xenia\cpu\hir\block.h" />
+    <ClInclude Include="..\src\xenia\cpu\hir\hir_builder.h" />
+    <ClInclude Include="..\src\xenia\cpu\hir\instr.h" />
+    <ClInclude Include="..\src\xenia\cpu\hir\label.h" />
+    <ClInclude Include="..\src\xenia\cpu\hir\opcodes.h" />
+    <ClInclude Include="..\src\xenia\cpu\hir\value.h" />
+    <ClInclude Include="..\src\xenia\cpu\lzx.h" />
+    <ClInclude Include="..\src\xenia\cpu\mmio_handler.h" />
+    <ClInclude Include="..\src\xenia\cpu\module.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_context.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_decode_data.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_emit-private.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_emit.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_frontend.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_hir_builder.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_instr.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_opcode.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_opcode_disasm.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_opcode_info.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_scanner.h" />
+    <ClInclude Include="..\src\xenia\cpu\ppc\ppc_translator.h" />
+    <ClInclude Include="..\src\xenia\cpu\processor.h" />
+    <ClInclude Include="..\src\xenia\cpu\raw_module.h" />
+    <ClInclude Include="..\src\xenia\cpu\stack_walker.h" />
+    <ClInclude Include="..\src\xenia\cpu\symbol.h" />
+    <ClInclude Include="..\src\xenia\cpu\test_module.h" />
+    <ClInclude Include="..\src\xenia\cpu\thread.h" />
+    <ClInclude Include="..\src\xenia\cpu\thread_debug_info.h" />
+    <ClInclude Include="..\src\xenia\cpu\thread_state.h" />
+    <ClInclude Include="..\src\xenia\cpu\xex_module.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\cpu\backend\assembler.cc" />
+    <ClCompile Include="..\src\xenia\cpu\backend\backend.cc" />
+    <ClCompile Include="..\src\xenia\cpu\backend\null_backend.cc" />
+    <ClCompile Include="..\src\xenia\cpu\breakpoint.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\compiler.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\compiler_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\conditional_group_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\conditional_group_subpass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\constant_propagation_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\context_promotion_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\control_flow_analysis_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\control_flow_simplification_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\data_flow_analysis_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\dead_code_elimination_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\finalization_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\memory_sequence_combination_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\register_allocation_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\simplification_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\validation_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\compiler\passes\value_reduction_pass.cc" />
+    <ClCompile Include="..\src\xenia\cpu\cpu_flags.cc" />
+    <ClCompile Include="..\src\xenia\cpu\elf_module.cc" />
+    <ClCompile Include="..\src\xenia\cpu\entry_table.cc" />
+    <ClCompile Include="..\src\xenia\cpu\export_resolver.cc" />
+    <ClCompile Include="..\src\xenia\cpu\function.cc" />
+    <ClCompile Include="..\src\xenia\cpu\function_debug_info.cc" />
+    <ClCompile Include="..\src\xenia\cpu\hir\block.cc" />
+    <ClCompile Include="..\src\xenia\cpu\hir\hir_builder.cc" />
+    <ClCompile Include="..\src\xenia\cpu\hir\instr.cc" />
+    <ClCompile Include="..\src\xenia\cpu\hir\opcodes.cc" />
+    <ClCompile Include="..\src\xenia\cpu\hir\value.cc" />
+    <ClCompile Include="..\src\xenia\cpu\lzx.cc" />
+    <ClCompile Include="..\src\xenia\cpu\mmio_handler.cc" />
+    <ClCompile Include="..\src\xenia\cpu\module.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_context.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_emit_altivec.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_emit_alu.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_emit_control.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_emit_fpu.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_emit_memory.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_frontend.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_hir_builder.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_opcode_disasm.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_opcode_disasm_gen.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_opcode_info.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_opcode_lookup_gen.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_opcode_table_gen.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_scanner.cc" />
+    <ClCompile Include="..\src\xenia\cpu\ppc\ppc_translator.cc" />
+    <ClCompile Include="..\src\xenia\cpu\processor.cc" />
+    <ClCompile Include="..\src\xenia\cpu\raw_module.cc" />
+    <ClCompile Include="..\src\xenia\cpu\stack_walker_win.cc" />
+    <ClCompile Include="..\src\xenia\cpu\test_module.cc" />
+    <ClCompile Include="..\src\xenia\cpu\thread.cc" />
+    <ClCompile Include="..\src\xenia\cpu\thread_state.cc" />
+    <ClCompile Include="..\src\xenia\cpu\xex_module.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="xenia-base.vcxproj">
+      <Project>{AEADAF22-2B20-4941-B05F-A802D5679C11}</Project>
+    </ProjectReference>
+    <ProjectReference Include="mspack.vcxproj">
+      <Project>{0881692A-75A1-4E7B-87D8-BB9108CEDEA4}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
