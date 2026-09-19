@@ -23,7 +23,7 @@ static const char kTraceExtension[] = "xtr";
 // Other changes besides the file format may require bumps, such as
 // anything that changes what is recorded into the files (new GPU
 // command processor commands, etc).
-constexpr uint32_t kTraceFormatVersion = 1;
+constexpr uint32_t kTraceFormatVersion = 2;
 
 // Trace file header identifying information about the trace.
 // This must be positioned at the start of the file and must only occur once.
