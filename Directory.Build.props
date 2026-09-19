@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup>
+    <CerebralRoot>$(MSBuildThisFileDirectory)</CerebralRoot>
+    <ForceImportAfterCppProps>
+      $(MSBuildThisFileDirectory)build\Cerebral.Common.props
+    </ForceImportAfterCppProps>
+  </PropertyGroup>
+</Project>
