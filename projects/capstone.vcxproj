@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Checked Windows|x64">
-      <Configuration>Checked Windows</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug Windows|x64">
       <Configuration>Debug Windows</Configuration>
       <Platform>x64</Platform>
@@ -21,12 +17,6 @@
     <RootNamespace>capstone</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -43,9 +33,6 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -53,12 +40,6 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
-    <OutDir>bin\Windows\Checked\</OutDir>
-    <IntDir>obj\Windows\Checked\Windows\Checked\capstone\</IntDir>
-    <TargetName>capstone</TargetName>
-    <TargetExt>.lib</TargetExt>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
     <OutDir>bin\Windows\Debug\</OutDir>
     <IntDir>obj\Windows\Debug\Windows\Debug\capstone\</IntDir>
@@ -71,32 +52,6 @@
     <TargetName>capstone</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">
-    <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>_UNICODE;UNICODE;DEBUG;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;WIN32;_WIN64=1;_AMD64=1;CAPSTONE_X86_ATT_DISABLE;CAPSTONE_DIET_NO;CAPSTONE_X86_REDUCE_NO;CAPSTONE_HAS_X86;CAPSTONE_USE_SYS_DYN_MEM;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..;..\src;..\third_party;..\third_party\capstone;..\third_party\capstone\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <Optimization>Disabled</Optimization>
-      <MinimalRebuild>false</MinimalRebuild>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <ExceptionHandling>Sync</ExceptionHandling>
-      <RuntimeTypeInfo>true</RuntimeTypeInfo>
-      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <AdditionalOptions>/RTCsu /utf-8 /w14839 /w14840 /wd4100 /wd4201 /wd4512 /wd4127 /wd4324 /wd4189 %(AdditionalOptions)</AdditionalOptions>
-      <LanguageStandard>stdcpp17</LanguageStandard>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-    <Lib>
-      <AdditionalDependencies>ntdll.lib;wsock32.lib;ws2_32.lib;xinput.lib;comctl32.lib;shcore.lib;shlwapi.lib;dxguid.lib;bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalOptions>/ignore:4006 /ignore:4221 %(AdditionalOptions)</AdditionalOptions>
-    </Lib>
-  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -177,62 +132,50 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\third_party\capstone\MCInst.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\MCInstrDesc.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\MCRegisterInfo.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\SStream.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\arch\X86\X86ATTInstPrinter.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\arch\X86\X86Disassembler.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\arch\X86\X86DisassemblerDecoder.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\arch\X86\X86IntelInstPrinter.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\arch\X86\X86Mapping.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\arch\X86\X86Module.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\cs.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
     <ClCompile Include="..\third_party\capstone\utils.c">
-      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Checked Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug Windows|x64'">CompileAsC</CompileAs>
       <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release Windows|x64'">CompileAsC</CompileAs>
     </ClCompile>
