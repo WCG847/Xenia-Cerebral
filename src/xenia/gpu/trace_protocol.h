@@ -32,9 +32,6 @@ struct TraceHeader {
   // Set to kTraceFormatVersion.
   uint32_t version;
 
-  // SHA1 of the commit used to record the trace.
-  char build_commit_sha[40];
-
   // Title ID of game that was being recorded.
   // May be 0 if not generated from a game or the ID could not be retrieved.
   uint32_t title_id;
