@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="app">
+      <UniqueIdentifier>{665E880B-D267-887C-5BE3-9E7CC7EB937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{8078947C-6CAF-950D-159C-7B1001B2110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ui">
+      <UniqueIdentifier>{C3795900-AF05-880B-18B4-880B045F880B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xenia\app\emulator_window.h">
+      <Filter>app</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\app\emulator_window.cc">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\app\xenia_main.cc">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\base\main_init_win.cc">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\ui\windowed_app_main_win.cc">
+      <Filter>ui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\base\app_win32.manifest">
+      <Filter>base</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\xenia\app\main_resources.rc">
+      <Filter>app</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

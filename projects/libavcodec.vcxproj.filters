@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="x86">
+      <UniqueIdentifier>{CBB8880B-37C2-887C-C03D-9F7C2C46947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\ac3_parser.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\adts_parser.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\avcodec.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\avdct.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\avfft.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\bsf.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\codec.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\codec_desc.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\codec_id.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\codec_par.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\d3d11va.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\dirac.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\dv_profile.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\dxva2.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\jni.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\mediacodec.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\packet.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\qsv.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\vaapi.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\vdpau.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\version.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\videotoolbox.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\vorbis_parser.h" />
+    <ClInclude Include="..\third_party\FFmpeg\libavcodec\xvmc.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\ac3_parser.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\adts_parser.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\allcodecs.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\avcodec.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\avdct.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\avfft.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\avpacket.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\avpicture.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\bitstream.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\bitstream_filter.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\bitstream_filters.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\bsf.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\codec_desc.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\codec_par.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\d3d11va.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\decode.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\dirac.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\dv_profile.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\encode.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\faandct.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\faanidct.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\fdctdsp.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\fft_fixed_32.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\fft_float.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\fft_init_table.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\file_open.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\idctdsp.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\imgconvert.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\jfdctfst.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\jfdctint.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\jni.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\jrevdct.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\mathtables.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\mdct_fixed_32.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\mdct_float.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\mediacodec.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\mpeg12framerate.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\null_bsf.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\options.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\parser.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\parsers.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\profiles.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\pthread.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\pthread_frame.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\pthread_slice.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\qsv_api.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\raw.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\simple_idct.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\sinewin.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\utils.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\vorbis_parser.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\wma.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\wma_common.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\wma_freqs.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\wmaprodec.c" />
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\x86\constants.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\x86\fdct.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\x86\fdctdsp_init.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\x86\fft_init.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\x86\idctdsp_init.c">
+      <Filter>x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\FFmpeg\libavcodec\xiph.c" />
+  </ItemGroup>
+</Project>

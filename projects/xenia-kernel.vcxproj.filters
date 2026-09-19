@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="info">
+      <UniqueIdentifier>{D184987C-BDBB-990D-66A8-7F1052BE150F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{43339F7C-2F6A-A00D-D856-8610C46C1C0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xam">
+      <UniqueIdentifier>{4BBE880B-B7C7-887C-4043-9F7CAC4B947C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xam\apps">
+      <UniqueIdentifier>{EE002C67-DACD-8672-03E7-741AEF12BC00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xbdm">
+      <UniqueIdentifier>{308BA07C-1CC2-A10D-C5AE-8710B1C41D0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="xboxkrnl">
+      <UniqueIdentifier>{BD0FFFBD-A9DC-59C9-D2F5-4771BE218F57}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xenia\kernel\info\file.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\info\volume.h">
+      <Filter>info</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\kernel_flags.h" />
+    <ClInclude Include="..\src\xenia\kernel\kernel_module.h" />
+    <ClInclude Include="..\src\xenia\kernel\kernel_state.h" />
+    <ClInclude Include="..\src\xenia\kernel\user_module.h" />
+    <ClInclude Include="..\src\xenia\kernel\util\gameinfo_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\util\native_list.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\util\object_table.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\util\shim_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\util\xdbf_utils.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\util\xex2_info.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\app_manager.h">
+      <Filter>xam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xam_app.h">
+      <Filter>xam\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xgi_app.h">
+      <Filter>xam\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xlivebase_app.h">
+      <Filter>xam\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\apps\xmp_app.h">
+      <Filter>xam\apps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\content_manager.h">
+      <Filter>xam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\user_profile.h">
+      <Filter>xam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_content_device.h">
+      <Filter>xam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_module.h">
+      <Filter>xam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_ordinals.h">
+      <Filter>xam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xam\xam_private.h">
+      <Filter>xam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xbdm\xbdm_module.h">
+      <Filter>xbdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xbdm\xbdm_ordinals.h">
+      <Filter>xbdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xbdm\xbdm_private.h">
+      <Filter>xbdm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\cert_monitor.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\debug_monitor.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_error.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_module.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_ordinals.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_private.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_rtl.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_threading.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_video.h">
+      <Filter>xboxkrnl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xenia\kernel\xenumerator.h" />
+    <ClInclude Include="..\src\xenia\kernel\xevent.h" />
+    <ClInclude Include="..\src\xenia\kernel\xfile.h" />
+    <ClInclude Include="..\src\xenia\kernel\xiocompletion.h" />
+    <ClInclude Include="..\src\xenia\kernel\xmodule.h" />
+    <ClInclude Include="..\src\xenia\kernel\xmutant.h" />
+    <ClInclude Include="..\src\xenia\kernel\xnotifylistener.h" />
+    <ClInclude Include="..\src\xenia\kernel\xobject.h" />
+    <ClInclude Include="..\src\xenia\kernel\xsemaphore.h" />
+    <ClInclude Include="..\src\xenia\kernel\xsocket.h" />
+    <ClInclude Include="..\src\xenia\kernel\xsymboliclink.h" />
+    <ClInclude Include="..\src\xenia\kernel\xthread.h" />
+    <ClInclude Include="..\src\xenia\kernel\xtimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\xenia\kernel\kernel_flags.cc" />
+    <ClCompile Include="..\src\xenia\kernel\kernel_module.cc" />
+    <ClCompile Include="..\src\xenia\kernel\kernel_state.cc" />
+    <ClCompile Include="..\src\xenia\kernel\user_module.cc" />
+    <ClCompile Include="..\src\xenia\kernel\util\gameinfo_utils.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\util\native_list.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\util\object_table.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\util\shim_utils.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\util\xdbf_utils.cc">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\app_manager.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xam_app.cc">
+      <Filter>xam\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xgi_app.cc">
+      <Filter>xam\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xlivebase_app.cc">
+      <Filter>xam\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\apps\xmp_app.cc">
+      <Filter>xam\apps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\content_manager.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\user_profile.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_avatar.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_content.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_content_aggregate.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_content_device.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_enum.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_info.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_input.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_locale.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_module.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_msg.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_net.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_notify.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_nui.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_party.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_task.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_ui.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_user.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_video.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xam\xam_voice.cc">
+      <Filter>xam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xbdm\xbdm_misc.cc">
+      <Filter>xbdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xbdm\xbdm_module.cc">
+      <Filter>xbdm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\cert_monitor.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\debug_monitor.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_audio.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_audio_xma.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_crypt.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_debug.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_error.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_hal.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_hid.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_io.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_io_info.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_memory.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_misc.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_module.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_modules.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_ob.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_rtl.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_strings.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_threading.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_usbcam.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_video.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_xconfig.cc">
+      <Filter>xboxkrnl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xenia\kernel\xenumerator.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xevent.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xfile.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xiocompletion.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xmodule.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xmutant.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xnotifylistener.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xobject.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xsemaphore.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xsocket.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xsymboliclink.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xthread.cc" />
+    <ClCompile Include="..\src\xenia\kernel\xtimer.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\xenia\kernel\util\export_table_post.inc">
+      <Filter>util</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\util\export_table_pre.inc">
+      <Filter>util</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\util\ordinal_table_post.inc">
+      <Filter>util</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\util\ordinal_table_pre.inc">
+      <Filter>util</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\xam\xam_module_export_groups.inc">
+      <Filter>xam</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\xam\xam_table.inc">
+      <Filter>xam</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\xbdm\xbdm_module_export_groups.inc">
+      <Filter>xbdm</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\xbdm\xbdm_table.inc">
+      <Filter>xbdm</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_module_export_groups.inc">
+      <Filter>xboxkrnl</Filter>
+    </None>
+    <None Include="..\src\xenia\kernel\xboxkrnl\xboxkrnl_table.inc">
+      <Filter>xboxkrnl</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="..\src\xenia\kernel\debug_visualizers.natvis" />
+  </ItemGroup>
+</Project>

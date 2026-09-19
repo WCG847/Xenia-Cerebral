@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="arch">
+      <UniqueIdentifier>{6332947C-4F69-950D-F855-7B10E46B110F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arch\X86">
+      <UniqueIdentifier>{78EF7736-64BC-D241-8DD5-C0E9790108D0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\third_party\capstone\LEB128.h" />
+    <ClInclude Include="..\third_party\capstone\MCDisassembler.h" />
+    <ClInclude Include="..\third_party\capstone\MCFixedLenDisassembler.h" />
+    <ClInclude Include="..\third_party\capstone\MCInst.h" />
+    <ClInclude Include="..\third_party\capstone\MCInstrDesc.h" />
+    <ClInclude Include="..\third_party\capstone\MCRegisterInfo.h" />
+    <ClInclude Include="..\third_party\capstone\MathExtras.h" />
+    <ClInclude Include="..\third_party\capstone\SStream.h" />
+    <ClInclude Include="..\third_party\capstone\arch\X86\X86BaseInfo.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\arch\X86\X86Disassembler.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\arch\X86\X86DisassemblerDecoder.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\arch\X86\X86DisassemblerDecoderCommon.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\arch\X86\X86InstPrinter.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\arch\X86\X86Mapping.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\arch\X86\X86Module.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\arch\X86\qsort.h">
+      <Filter>arch\X86</Filter>
+    </ClInclude>
+    <ClInclude Include="..\third_party\capstone\cs_priv.h" />
+    <ClInclude Include="..\third_party\capstone\utils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\third_party\capstone\MCInst.c" />
+    <ClCompile Include="..\third_party\capstone\MCInstrDesc.c" />
+    <ClCompile Include="..\third_party\capstone\MCRegisterInfo.c" />
+    <ClCompile Include="..\third_party\capstone\SStream.c" />
+    <ClCompile Include="..\third_party\capstone\arch\X86\X86ATTInstPrinter.c">
+      <Filter>arch\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\capstone\arch\X86\X86Disassembler.c">
+      <Filter>arch\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\capstone\arch\X86\X86DisassemblerDecoder.c">
+      <Filter>arch\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\capstone\arch\X86\X86IntelInstPrinter.c">
+      <Filter>arch\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\capstone\arch\X86\X86Mapping.c">
+      <Filter>arch\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\capstone\arch\X86\X86Module.c">
+      <Filter>arch\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\third_party\capstone\cs.c" />
+    <ClCompile Include="..\third_party\capstone\utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\third_party\capstone\arch\X86\X86GenAsmWriter.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenAsmWriter1.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenAsmWriter1_reduce.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenAsmWriter_reduce.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenDisassemblerTables.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenDisassemblerTables_reduce.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenInstrInfo.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenInstrInfo_reduce.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86GenRegisterInfo.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86ImmSize.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86MappingInsn.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86MappingInsnOp.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86MappingInsnOp_reduce.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+    <None Include="..\third_party\capstone\arch\X86\X86MappingInsn_reduce.inc">
+      <Filter>arch\X86</Filter>
+    </None>
+  </ItemGroup>
+</Project>
