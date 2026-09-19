@@ -1,340 +1,229 @@
 <Solution>
   <Configurations>
-    <BuildType Name="Checked" />
-    <BuildType Name="Debug" />
-    <BuildType Name="Release" />
-    <Platform Name="Windows" />
+    <Platform Name="x64" />
   </Configurations>
   <Folder Name="/demos/">
-    <Project Path="projects\xenia-hid-demo.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-hid-demo.vcxproj" Id="a56a209c-16d5-4913-85f9-86976fe7fddf">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-ui-window-d3d12-demo.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-ui-window-d3d12-demo.vcxproj" Id="3b9686a7-0f04-4e17-8b00-aeb78ae1107c">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-ui-window-vulkan-demo.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-ui-window-vulkan-demo.vcxproj" Id="97598f13-3177-454c-8e58-c59e2b6ede27">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
   </Folder>
   <Folder Name="/src/">
-    <Project Path="projects\xenia-app-discord.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-app-discord.vcxproj" Id="d14c0885-22d2-40de-ab28-7b234ef2b949">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-app.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-app.vcxproj" Id="d7e98620-d007-4ad8-9dbd-b47c8853a17f">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-apu-nop.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-apu-nop.vcxproj" Id="f37dbf3a-d200-4cc0-83f0-f801b1bdd862">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-apu-sdl.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-apu-sdl.vcxproj" Id="153b4e8b-813a-40e6-9366-4b51abc73c45">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-apu-xaudio2.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-apu-xaudio2.vcxproj" Id="7a54a497-24d9-4c0e-a013-8507a04231f9">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-apu.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-apu.vcxproj" Id="f4df01f0-50e4-4c67-8f54-61660696cc79">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-base.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-base.vcxproj" Id="aeadaf22-2b20-4941-b05f-a802d5679c11">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-core.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-core.vcxproj" Id="970f7892-f19a-4bf5-8795-478c51757bec">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-cpu-backend-x64.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-cpu-backend-x64.vcxproj" Id="7d8d5dce-4696-4197-952a-09506f725afe">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-cpu.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-cpu.vcxproj" Id="0109c91e-5a04-41ab-9168-0d5187d11298">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-debug-ui.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-debug-ui.vcxproj" Id="9193a274-f4c2-4746-bd85-93fcfc5c3e38">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-d3d12-trace-dump.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-d3d12-trace-dump.vcxproj" Id="686b859c-0046-44c4-a02c-41fc3fb75698">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-d3d12-trace-viewer.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-d3d12-trace-viewer.vcxproj" Id="7b5b9fcb-7bf1-43ff-a774-d4c41c8706be">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-d3d12.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-d3d12.vcxproj" Id="c057eae4-e7bb-4113-9a69-1fe07b735c49">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-null.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-null.vcxproj" Id="42fca0b3-4c20-4532-95e9-07d297013be4">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-shader-compiler.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-shader-compiler.vcxproj" Id="ad76d3e4-4c62-439b-a0f6-f83fcf0e83c5">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-vulkan-trace-dump.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-vulkan-trace-dump.vcxproj" Id="0dd0dd1c-b321-494d-ab9a-6c062f0c65cc">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-vulkan-trace-viewer.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-vulkan-trace-viewer.vcxproj" Id="86a1dddc-a26a-4885-8c55-cf745225d93e">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu-vulkan.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu-vulkan.vcxproj" Id="717590b4-f579-4162-8f23-0624e87d6cca">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-gpu.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-gpu.vcxproj" Id="0e8d3370-e4b1-4b05-a2e8-39ebbcdf9b17">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-helper-sdl.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-helper-sdl.vcxproj" Id="84b00ad3-fba3-4561-96c9-1f9993b14c9c">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-hid-nop.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-hid-nop.vcxproj" Id="887b6f26-b0c1-43c1-a013-a37e7b9634fd">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-hid-sdl.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-hid-sdl.vcxproj" Id="44f5b9a1-00f8-4825-acf1-5c93f26eba9b">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-hid-winkey.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-hid-winkey.vcxproj" Id="fd16e19a-6219-4ab7-b95a-7c78523c50c3">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-hid-xinput.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-hid-xinput.vcxproj" Id="3d49e251-07a7-40ae-9bc6-aae984c85568">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-hid.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-hid.vcxproj" Id="88a4ef38-c550-430f-8c22-8ded4e4ef601">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-kernel.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-kernel.vcxproj" Id="ae185c4a-1c4f-4503-9892-328e549e871a">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-ui-d3d12.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-ui-d3d12.vcxproj" Id="f93dc1a8-600f-43e7-b0fc-ae3eefbe836b">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-ui-vulkan.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-ui-vulkan.vcxproj" Id="4933d81e-1c2c-4d5d-b104-3c0eb9dc2f00">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-ui.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-ui.vcxproj" Id="d0407c25-b0ea-40dc-846c-82c46fbd9fa2">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-vfs-dump.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-vfs-dump.vcxproj" Id="2ef270c7-41a8-4d0e-acc5-59693a9cce32">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-vfs.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-vfs.vcxproj" Id="395c8abd-4dc9-46ed-af7a-c2b9b68a3a98">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="projects\xenia-base-tests.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-base-tests.vcxproj" Id="c207dd83-ae00-fcd5-d732-e15ac38adbe1">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-cpu-ppc-tests.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-cpu-ppc-tests.vcxproj" Id="2a57d5ac-4024-4c49-9cd3-aa3a603c2ef8">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-cpu-tests.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-cpu-tests.vcxproj" Id="af274af8-1bb3-b7bc-24c4-3ab190ce13bd">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xenia-vfs-tests.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xenia-vfs-tests.vcxproj" Id="76c0ffc8-e24b-6d8d-eb5c-f0815767c98d">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
   </Folder>
   <Folder Name="/third_party/">
-    <Project Path="projects\aes_128.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\aes_128.vcxproj" Id="b50458bf-dd83-4c1a-8cad-61f5fbbfd720">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\capstone.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\capstone.vcxproj" Id="b3a89f7e-bb02-4945-ae75-219caed6afa2">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\cpptoml.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\cpptoml.vcxproj" Id="1e86cc51-3f8b-476d-9249-3b200424846b">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\cxxopts.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\cxxopts.vcxproj" Id="8b68cbe8-2da4-4f28-be14-9352eafa3168">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\discord-rpc.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\discord-rpc.vcxproj" Id="012f6131-efc0-4abd-852d-a33640732d4c">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\dxbc.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\dxbc.vcxproj" Id="c96688ca-51ca-406e-aeef-068734a67abe">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\fmt.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\fmt.vcxproj" Id="b9ff4b2c-b438-42a9-971e-e0c19a711a13">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\glslang-spirv.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\glslang-spirv.vcxproj" Id="1cc8f45e-91e2-4daf-a55e-666bf8b5e6b2">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\imgui.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\imgui.vcxproj" Id="ed9271c4-b0a1-42ef-8403-067b11bf49d0">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\libavcodec.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\libavcodec.vcxproj" Id="9db2830c-d326-48ed-b4cc-08ea6a1b7272">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\libavutil.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\libavutil.vcxproj" Id="19216035-f781-4f15-b009-213b7e3a18ac">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\mspack.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\mspack.vcxproj" Id="0881692a-75a1-4e7b-87d8-bb9108cedea4">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\SDL2.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\SDL2.vcxproj" Id="65878768-95a1-4e7b-8dfb-b23a09e0de7c">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\snappy.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\snappy.vcxproj" Id="bb143d61-3fd4-44c2-8b7e-04cc538ba2c7">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
-    <Project Path="projects\xxhash.vcxproj">
-      <BuildType Solution="Checked|*" Project="Checked Windows" />
+    <Project Path="projects\xxhash.vcxproj" Id="40d4ce21-5448-4399-9f98-589b7e1c23b1">
       <BuildType Solution="Debug|*" Project="Debug Windows" />
       <BuildType Solution="Release|*" Project="Release Windows" />
-      <Platform Project="x64" />
     </Project>
   </Folder>
 </Solution>
